@@ -125,7 +125,5 @@ After flashing, it is recommended to verify the installed software stack. The fo
 
 - L4T: 36.4.4
 
-OpenCV: CUDA-enabled build (version depends on JetPack release, typically OpenCV 4.8.x)
-
 By following these procedures, the NVIDIA Jetson AGX Orin (64 GB Developer Kit) can be successfully flashed with the latest JetPack release. The system will then be fully prepared for accelerated AI workloads, supporting CUDA, cuDNN, TensorRT, and other components of the NVIDIA development ecosystem.
 
