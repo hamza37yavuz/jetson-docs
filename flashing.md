@@ -74,6 +74,9 @@ If successful, the device will appear as **NVIDIA Corp. APX device**.
 
 After the device is detected, SDK Manager allows selection of the target hardware (**Jetson AGX Orin**). If the developer kit includes an SSD, installation can be directed onto the SSD by choosing it as the primary storage target during the flashing process.
 
+__**Headless**__:
+In addition to using a monitor, keyboard, and mouse during the initial setup, the Jetson AGX Orin can also be operated in headless mode. In this configuration, the device runs without a directly attached display or input peripherals. Instead, it is accessed over the network, typically via Ethernet or Wi-Fi, using an ssh connection from the host machine. Headless operation is particularly useful for remote management, software development, and deploying AI workloads in environments where direct physical access to the device is limited or unnecessary.
+
 ---
 
 ## 5. Verification of Installation
@@ -124,6 +127,8 @@ After flashing, it is recommended to verify the installed software stack. The fo
 - Docker: 28.3.3
 
 - L4T: 36.4.4
+
+OpenCV: CUDA-enabled build (version depends on JetPack release, typically OpenCV 4.8.x)
 
 By following these procedures, the NVIDIA Jetson AGX Orin (64 GB Developer Kit) can be successfully flashed with the latest JetPack release. The system will then be fully prepared for accelerated AI workloads, supporting CUDA, cuDNN, TensorRT, and other components of the NVIDIA development ecosystem.
 
