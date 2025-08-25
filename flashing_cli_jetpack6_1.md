@@ -6,6 +6,17 @@ This report documents how JetPack 6.1 was provisioned on a Jetson AGX Orin Devki
 
 ---
 
+## Retrieval of Release Artifacts
+
+The required L4T release package and the sample root filesystem were downloaded from NVIDIA’s distribution site. It was ensured that sufficient disk space was available before initiating the downloads.
+
+```bash
+wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.0/release/Jetson_Linux_R36.4.0_aarch64.tbz2
+wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.0/release/Tegra_Linux_Sample-Root-Filesystem_R36.4.0_aarch64.tbz2
+```
+
+---
+
 ## Environment and Variables
 
 To ensure reproducibility, environment variables were defined for the release packages and board configuration. These variables were used consistently across subsequent steps.
@@ -14,17 +25,6 @@ To ensure reproducibility, environment variables were defined for the release pa
 L4T_RELEASE_PACKAGE=Jetson_Linux_R36.4.0_aarch64.tbz2
 SAMPLE_FS_PACKAGE=Tegra_Linux_Sample-Root-Filesystem_R36.4.0_aarch64.tbz2
 BOARD=jetson-agx-orin-devkit
-```
-
----
-
-## Retrieval of Release Artifacts
-
-The required L4T release package and the sample root filesystem were downloaded from NVIDIA’s distribution site. It was ensured that sufficient disk space was available before initiating the downloads.
-
-```bash
-wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.0/release/Jetson_Linux_R36.4.0_aarch64.tbz2
-wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.0/release/Tegra_Linux_Sample-Root-Filesystem_R36.4.0_aarch64.tbz2
 ```
 
 ---
