@@ -1,4 +1,4 @@
-# Flashing NVIDIA Jetson AGX Orin (64 GB Developer Kit)
+# Flashing NVIDIA Jetson AGX Orin (64 GB Developer Kit) With SDK Manager
 
 ## Introduction
 
